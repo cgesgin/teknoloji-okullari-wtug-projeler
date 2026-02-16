@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD1C695-8E21-4FE1-8763-6FBA9926B403}|01LoginRegistration\\01LoginRegistration.csproj|c:\\users\\cgesgin\\source\\repos\\01loginregistration\\01loginregistration\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD1C695-8E21-4FE1-8763-6FBA9926B403}|01LoginRegistration\\01LoginRegistration.csproj|solutionrelative:01loginregistration\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD1C695-8E21-4FE1-8763-6FBA9926B403}|01LoginRegistration\\01LoginRegistration.csproj|c:\\users\\cgesgin\\source\\repos\\01loginregistration\\01loginregistration\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECD1C695-8E21-4FE1-8763-6FBA9926B403}|01LoginRegistration\\01LoginRegistration.csproj|solutionrelative:01loginregistration\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD1C695-8E21-4FE1-8763-6FBA9926B403}|01LoginRegistration\\01LoginRegistration.csproj|c:\\users\\cgesgin\\source\\repos\\01loginregistration\\01loginregistration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD1C695-8E21-4FE1-8763-6FBA9926B403}|01LoginRegistration\\01LoginRegistration.csproj|solutionrelative:01loginregistration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 112,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,45 +22,16 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 288,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\01LoginRegistration\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "01LoginRegistration\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\01LoginRegistration\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "01LoginRegistration\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T07:21:31.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\01LoginRegistration\\Program.cs",
-              "RelativeDocumentMoniker": "01LoginRegistration\\Program.cs",
-              "ToolTip": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\01LoginRegistration\\Program.cs",
-              "RelativeToolTip": "01LoginRegistration\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T07:19:36.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\01LoginRegistration\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "01LoginRegistration\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\cgesgin\\source\\repos\\01LoginRegistration\\01LoginRegistration\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "01LoginRegistration\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T07:18:09.022Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

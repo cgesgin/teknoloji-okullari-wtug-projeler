@@ -8,7 +8,7 @@ namespace _01LoginRegistration.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -16,11 +16,24 @@ namespace _01LoginRegistration.Controllers
 
         public IActionResult Index()
         {
+            Console.WriteLine("HomeController Index action called.");
             return View();
         }
 
         [Authorize]
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [Authorize(Roles ="Admin")]
+        public IActionResult Admin()
+        {
+            return View();
+        }
+
+        [Authorize(Roles = "User")]
+        public IActionResult User()
         {
             return View();
         }

@@ -1,7 +1,9 @@
 using _01LoginRegistration.Entities;
 using _01LoginRegistration.Repositories;
+using _01LoginRegistration.Seeds;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 
@@ -11,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var SqlCon = builder.Configuration.GetConnectionString("SqlCon");
+
 builder.Services.AddDbContext<AppDbContext>(
         options => options.UseMySql(SqlCon,
         ServerVersion.AutoDetect(SqlCon), x =>
@@ -40,8 +43,9 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
 })
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
-
 var app = builder.Build();
+
+await DbUserInit.SeedDatabase(app.Services);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -55,6 +59,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
