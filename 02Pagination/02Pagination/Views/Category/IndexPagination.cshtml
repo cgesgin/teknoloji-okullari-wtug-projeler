@@ -1,0 +1,50 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+
+@model IPagedList<Category>
+
+@{
+    ViewData["Title"] = "index";
+}
+<h2>Category List</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="d-flex justify-content-center mt-4">
+
+    @Html.PagedListPager(
+            (IPagedList)Model,
+            page => Url.Action("IndexPagination", new { page }),
+            new X.PagedList.Mvc.Core.PagedListRenderOptions
+    {
+        LiElementClasses = new[] { "page-item" },
+        PageClasses = new[] { "page-link" },
+        UlElementClasses = new[] { "pagination", "pagination-lg" },
+        DisplayLinkToFirstPage = X.PagedList.Mvc.Core.PagedListDisplayMode.Always,
+        DisplayLinkToLastPage = X.PagedList.Mvc.Core.PagedListDisplayMode.Always,
+        DisplayLinkToPreviousPage = X.PagedList.Mvc.Core.PagedListDisplayMode.Always,
+        DisplayLinkToNextPage = X.PagedList.Mvc.Core.PagedListDisplayMode.Always
+    }
+            )
+
+</div>
+
+@* @Html.PagedListPager((IPagedList)Model, page => Url.Action("IndexPagination", new { page })) *@
