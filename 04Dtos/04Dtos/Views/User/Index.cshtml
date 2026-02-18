@@ -1,0 +1,22 @@
+﻿@model List<_04Dtos.Dtos.UserDto>
+
+<h2>User List (DTO)</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Username</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
